@@ -24,7 +24,7 @@
     <input type="hidden" name="id" [(ngModel)]="currentPost.id" />
     <button
     *ngIf="isEdit"
-      (click)="addPost(title.value, body.value)"
+      (click)="updatePost(title.value, body.value)"
       class="btn btn-warning btn-block"
     >
       Update Post
