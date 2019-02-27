@@ -6,4 +6,10 @@
       <p>{{ post.body }}</p>
     </div>
   </div>
+
+  <div *ngIf="!post">
+    <h1>404</h1>
+
+    <p>The requested resource cannot be found at this page.</p>
+  </div>
 </div>
